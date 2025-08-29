@@ -5,7 +5,7 @@ export const createSchema = z.object({
   status: z.enum(["pending", "completed"]).optional().default("pending"),
 });
 
-export const updateTaskSchema = z.object({
+export const updateSchema = z.object({
   status: z.enum(["pending", "completed"], {
     required_error: "status is required",
   }),
