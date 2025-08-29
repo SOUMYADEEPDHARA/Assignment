@@ -1,7 +1,7 @@
 import { z } from "zod";
 import jwt from "jsonwebtoken";
 
-const JWT_SECRET = process.env.JWT_SECRET || "change_this_dev_secret";
+const JWT_SECRET = process.env.JWT_SECRET ;
 
 const loginSchema = z.object({
 username: z.string().min(1),

@@ -1,4 +1,4 @@
-import { createSchema, updateSchema } from "./models/taskModel.js";
+import { createSchema, updateSchema } from "../Models/taskModel.js";
 
 let tasks = [];
 let nextId = 1;
